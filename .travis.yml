@@ -6,4 +6,5 @@ before_install:
 script:
   - wget https://github.com/TopQuadrant/shacl/releases/download/v1.0.0/shacl-1.0.0-bin.zip
   - unzip shacl-1.0.0-bin.zip
-  - chmod +x ./shacl-1.0.0-bin/bin/shaclvalidate.sh -shapesfile ech-0200.shacl.ttl -datafile ./examples/minimal-valid.ttl
+  - chmod +x ./shacl-1.0.0/bin/shaclvalidate.sh
+  - ./shacl-1.0.0/bin/shaclvalidate.sh -shapesfile ech-0200.shacl.ttl -datafile ./examples/minimal.valid.ttl
